@@ -17,9 +17,9 @@ if st.button("Predict"):
         confidence = proba.max() * 100
         st.write(f"Confidence: {confidence:.2f}%")
 
-            if prediction == 1:
-                st.success("Positive Review ")
-            else:
-                st.error("Negative Review ")
+        if prediction == 1:
+            st.success("Positive Review ")
+        else:
+            st.error("Negative Review ")
     else:
         st.warning("Please enter a review")
